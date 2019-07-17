@@ -1,0 +1,29 @@
+.navbar{
+  padding: 0;
+  .navbar-brand{
+    font-family: $secondary-font;
+    font-size: 50px;
+    line-height: 1;
+    color: $white;
+  }
+  .navbar-nav{
+    .nav-item{
+      .nav-link{
+        transition: all .3s ease;
+        color: $white;
+        padding: 30px 25px 15px;
+        border-radius: 0 0 5px 5px;
+      }
+      &:hover{
+        .nav-link{
+          background: #74C7D5;
+        }
+      }
+      &.active{
+        .nav-link{
+          background: #74C7D5;
+        }
+      }
+    }
+  }
+}

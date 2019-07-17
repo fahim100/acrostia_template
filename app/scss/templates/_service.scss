@@ -1,0 +1,58 @@
+.service{
+  background: #b24a50;
+  position: relative;
+  &::before{
+    position: absolute;
+    content: '';
+    background: url('../images/hero/service_background_overlay.png');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+  }
+  &_title{}
+  &-item{
+    text-align: center;
+    background-color: rgba(200, 83, 90, 0.8);
+    padding: 45px 25px;
+    border-radius: 5px;
+    span{
+      height: 120px;
+      width: 120px;
+      margin: 0 auto;
+      display: block;
+      background: $white;
+      border-radius: 50%;
+      margin-bottom: 30px;
+      border: 5px solid rgb(200, 83, 90);
+      box-shadow: 0 0 0 5px $white;
+      position: relative;
+      i{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 60px;
+        color: #C8535A;
+      }
+    }
+    h3{
+      text-transform: uppercase;
+      font-size: 30px;
+      font-family: $primary-font;
+      color: $white;
+      font-weight: 300;
+      margin: 0 0 40px 0;
+    }
+    p{
+      font-family: $primary-font;
+      font-size: 14px;
+      color: $white;
+      line-height: 20px;
+      margin: 0;
+    }
+  }
+}
